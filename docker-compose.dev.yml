@@ -107,6 +107,7 @@ services:
       - ./frontend/public:/app/public
     env_file: .env
     environment:
+      - WATCHPACK_POLLING=true
       - NEXT_PUBLIC_ENV=development
       - INFISICAL_TELEMETRY_ENABLED=false
 
